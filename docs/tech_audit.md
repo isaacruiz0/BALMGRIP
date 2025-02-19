@@ -105,8 +105,7 @@ Next.js's hybrid rendering paradigm is ideal as it ensures optimal initial page 
 As the user scrolls, the balmgrip and chapstick come together eventually snapping into each other
 
 ## 3. **Backend**
-### Runtime: Node.js
-### Framework: Express.js
+### Framework: Next.js
 
 ### External APIs - APIs that the BE interacts with
 - Stripe API Integration
@@ -142,7 +141,7 @@ As the user scrolls, the balmgrip and chapstick come together eventually snappin
 
 ## Database
 ### Type
-MySQL
+Supabase( postgreSQL )
 ### Schemas
 #### Order Details table:
   - id (primary key)
@@ -171,8 +170,7 @@ MySQL
 
 ## 5. **Hosting & Deployment**
 FE: Vercel
-BE: Heroku
-Database: PlanetScale
+Database: Supabase
 
 ---
 
@@ -229,13 +227,10 @@ Database: PlanetScale
 | - `/stripe/checkout` for frontend integration            | 3 hours            |
 | - `/orders/track/:orderId` for tracking updates          | 4 hours            |
 | **Database Development**                                  |                    |
-| Set up MySQL database on PlanetScale                     | 2 hours            |
 | Design and implement Order Details table schema          | 2 hours            |
 | Design and implement Reviews table schema (Post-MVP)     | 2 hours            |
 | **Hosting & Deployment**                                  |                    |
-| Deploy frontend to Vercel                                | 1 hour             |
-| Deploy backend to Heroku                                 | 1 hour             |
-| Connect backend to PlanetScale database                  | 1 hour             |
+| Deploy app with Vercel                                | 1 hour             |
 | **Performance Optimization**                              |                    |
 | Set up caching for API responses                         | 3 hours            |
 | Conduct Lighthouse and WebPageTest audits                | 2 hours            |
